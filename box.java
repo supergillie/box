@@ -3,37 +3,27 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+public class box {
+ 
+     public static void main(String s[]) {
 
+        JFrame frame = new JFrame("JFrame Example");
 
-public class box extends JFrame
-{
-    /**
-     *
-     */
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
 
-    private static final Jlabel JLABEL = new Jlabel();
-    JPanel jp = new JPanel(true);
-    JLabel jl = JLABEL;
-    JTextField jt = new JTextField(30);
+        JLabel label = new JLabel("This is a label!");
 
+        JButton button = new JButton();
+        button.setText("Press me");
 
-    public box()
-    {
-        setTitle("quiz");
-        setVisible(true);
-        // SetSize(1000,500);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        panel.add(label);
+        panel.add(button);
 
-        jp.add(jt);
-       
-        { 
-            {
-                String input = jt.getText();
-                jl.setText(input);
-            }
-        }
-        jp.add(jl);
-        add(jp);
+        frame.add(panel);
+        frame.setSize(300, 300);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
-
 }

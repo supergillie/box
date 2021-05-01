@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class box1 {
+public class box {
     private JFrame frame;
     private JPanel panel;
     private JButton button;
